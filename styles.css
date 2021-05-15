@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    font-family: "Quicksand";
+    box-sizing: border-box;
+}
+
+.main-header {
+    background: 
+        linear-gradient(
+            transparent,
+            rgba(122, 226, 254, 0.4)
+        ), 
+        url(images/big-sur.jpg);
+        background-position: center;
+    background-size: cover;
+}
+
+.profile-img {
+    height: 35%;
+    width: 35%;
+    min-width: 216px;
+    border-radius: 50%;
+}
+
+.contact-info {
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(7, 69, 151);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons * {
+    width: 1.5em;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(.49,-0.54,.85,1.69);
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+button {
+    transition: opacity 0.25s linear;
+}
+
+button:hover {
+    color: white;
+    background-color: lightblue;
+}
+
+button:focus {
+    background-color:  #20c997;
+}
+
+.thanks-text {
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
+.section > p {
+    color: #222222;
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.main-nav {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.tidbit-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tidbit-buttons button, 
+#links button {
+    width: 90px;
+    text-align: center;
+}
+
+.tidbits-cover {
+    height: 200px;
+    transition: all 0.4s ease-out;
+}
+
+.height-0 {
+    height: 0;
+}
+
+article {
+    background-color: #8fcfbc;;
+    border: 2px solid black;
+}
+
+.category > ul {
+    display: flex; 
+    flex-wrap: wrap; 
+    list-style-type: none;
+    white-space: nowrap;
+    flex-direction: column;
+}
+
+.category > img {
+    height: 35%;
+    width: 35%;
+}
+
+.category > li {
+    align-self: left;
+    display: inline-block;
+    width: max-content;
+    padding: 3px;
+    margin: 3px;
+    list-style-type: none;
+}
+
+.item {
+    background-color: rgb(201, 201, 201);
+    width: 90%;
+}
+
+.portfolio-img {
+    width: 75%;
+}
+
+.item-description {
+    color: #222222;
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+    line-height: 20px;
+    opacity: 0;
+    display: none;
+    transition: all 0.5s ease-out;
+}
+
+.revealed {
+    opacity: 1;
+    display: block;
+}
+

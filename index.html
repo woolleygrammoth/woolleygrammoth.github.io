@@ -6,9 +6,156 @@
     <title>woolleygrammoth</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Stay tuned, this will be a complete portfolio page in a few days.</h1>
-    <img src='g&j-grad.jpg' alt='graham & jenga'>
+<body class='bg-light pb-5'>
+    <header class='main-header py-5 pt-0'>
+      <nav class="main-nav navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#top">Graham Woolley</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link fw-normal" aria-current="page" href="#context">Context</a>
+              <a class="nav-link fw-normal" aria-current="page" href="#tidbits">Tidbits</a>
+              <a class="nav-link fw-normal" href="portfolio.html">Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <img src='images/g&j-grad.jpg' alt='graham & jenga' class='profile-img mx-auto d-block mt-4'>
+        <div class='contact-info rounded mx-auto mt-4 p-2'>
+          <h1>Graham Woolley</h1>
+          <hr class='my-0'>
+          <p class='email my-0 text-center'>gwoolley@berkeley.edu</p>
+          <div class='icons'>
+            <a href='https://github.com/woolleygrammoth/' target='_blank'><img id='github' src='images/github.svg' alt='Github Logo'></a>
+            <a href='https://www.linkedin.com/in/graham-woolley-18b63818b/' target='_blank'><img id='linkedin' src='images/linkedin.svg' alt='LinkedIn Logo'></a>
+            <a href='https://twitter.com/woolleygrammoth/' target='_blank'><img id='twitter' src='images/twitter.svg' alt='Twitter Logo'></a>
+          </div>
+        </div>
+    </header>
+    <div class='personal-info'>
+        <button type="button" id='thanks-button' class='btn btn-outline-info btn-sm d-block m-auto mt-3'>Click here</button>
+        <h4 class='thanks-text text-center d-none mt-2 bg-info color-white'>Thanks for visiting!</h4>
+        <div class='section mb-3 pb-2 border-bottom border-dark' id='context'>
+            <h1 class='text-center fw-bolder'>Context</h1>
+            <p>I am a recent graduate from UC Berkeley Physics (2019). Go Bears! Currently, I'm a STEM teacher at ARISE High School in Oakland, CA&#8212;I teach physics, engineering, and computer science. In the Berkeley Physics community I was called the biggest physics nerd around, and I still wear that label with pride. 
+            </p>
+            <p>On a purely intellectual level, I could be satisfied for the rest of my life as a tenured theoretical particle physicist. However, I feel the existential pressure to do something about climate change, so I've decided against the academic route. What drives me now is the mission to avert the climate crisis, and I hope to spend my career advancing technological solutions to the problem. 
+            </p>
+            <p>This mission guided my career moves until the coronavirus struck. My prospects at a solar microgrid startup were derailed by an early-pandemic hiring freeze, after which a furious job hunt led me to teach high school-level STEM in Oakland. 
+            </p>
+            <p>I enjoy teaching and value the relationships I've built here, but the existential dread of the climate crisis still weighs heavily on me. For this reason, my next steps involve further developing my tech skills so I can jump into the clean tech space and make an impact. Until then, I'm focused on being the best teacher I can be and educating a new generation about solving the problems of the future. 
+            </p>
+        </div>
+        <div id='links' class='d-flex justify-content-around mb-3'>
+          <a href='#portfolio'><button type='button' class='btn btn-secondary'>Portfolio</button></a>
+          <a href='https://docs.google.com/document/d/1Yygq2jYWs404f8UbQEyvcFSbh6Xsj3ZUh49GauL4Buw/edit' target='_blank'><button type='button' class='btn btn-secondary'>Resume</button></a>
+        </div>
+        <div class='tidbit-buttons' id='tidbits'>
+          <a href='#tidbits'><button class='btn btn-outline-primary btn-sm d-block m-auto'>Bio</button></a>
+          <a href='#tidbits'><button class='btn btn-outline-primary btn-sm d-block m-auto'>Interests</button></a>
+        </div>
+        <div class='tidbits-cover d-flex align-items-center m-2' style='background-color: #20c997;'><h1 class='mx-auto'>Click for tidbits!</h1></div>
+        <article class='section' id='bio'>
+          <h1 class='text-center fw-bolder mt-3'>Bio</h1>
+          <img src="images/siblings.jpg" class='mx-auto d-block rounded-circle' alt="Graham and his siblings Rod and Livi">
+          <p>I was born and raised in Chicago and have always had many interests&#8212;science, baseball, music, math, swimming, volunteering, etc. I was always a fast learner in all these areas, but never to such an extent that science, for example, was an obvious place to focus and excel. 
+          </p>
+          <p>During high school I was split between music and sports as a means to earn a scholarship to some college, but neither really worked out. I knew I wanted to play water polo at a California school, so I moved to SoCal to play at community college. I spent three years working to achieve in-state status while taking classes and finally learning what drives me. 
+          </p>
+          <p>Community college was a blast. I became obsessed with math and physics. I played college water polo, taught myself the guitar, got into yoga, and spent endless hours at the beach. After those three years, I applied for a third time to UC Berkeley, this time as a physics major. I had finally found something compelling that I could really excel in, and Berkeley Physics gave me the chance to grow. 
+          </p>
+          <p class='pb-3'>While I fed my fascination with physics, I also became more obsessed with climate change, until I realized the urgent need for driven and technically competent people in the climate change mitigation space. To that end, while physics will always feed my childlike curiosity, I’ve decided that green tech is where I will spend my career, in the hope that future generations will get to enjoy Earth in the same ways I have. 
+          </p>
+        </article>
+        <article class='section' id='interests'>
+          <h1 class='text-center fw-bolder mt-3'>Interests</h1>
+          <p class='pb-3'>This is just a list of things I'm interested in. There are things I'm just interested in thinking about or discussing, but the <strong>bolded</strong> items are areas I would consider working in whenever an opportunity presents itself. This list is by no means exhaustive and has been haphazardly arranged into four categories.</p>
+          <div class='category px-0 rounded border border-3 border-light clearfix' style='background-color: rgb(169, 169, 247);'>
+            <h5 class='text-center fw-bold'>Physics</h5>
+            <img src="images/physics.jpg" class='rounded-circle m-2 mt-0 float-end' alt="Diagram of Earth curving spacetime">
+            <ul>
+              <li>General relativity</li>
+              <li>Chaos theory</li>
+              <li>The Fermi Paradox</li>
+              <li>Particle physics</li>
+              <li><strong>Materials science</strong></li>
+              <li>Entropy & thermodynamics</li>
+              <li><strong>Graphene</strong></li>
+            </ul>
+          </div>
+          <div class='category px-0 rounded border border-3 border-light clearfix' style='background-color: rgb(125, 177, 245);'>
+            <h5 class='text-center fw-bold'>Climate and Energy</h5>
+            <img src="images/earth.gif" class='rounded-circle m-2 mt-0 float-end' alt="Rotating Earth">
+            <ul>
+              <li><strong>Supercapacitors</strong></li>
+              <li>Reforestation</li>
+              <li>Climate feedbacks</li>
+              <li><strong>Carbon sequestration</strong></li>
+              <li><strong>Battery chemistries</strong></li>
+              <li><strong>Utility-scale energy storage</strong></li>
+              <li><strong>Climate policy</strong></li>
+              <li>Climate change economics</li>
+              <li><strong>Climate education</strong></li>
+              <li><strong>Disaster preparedness</strong></li>          
+            </ul>
+          </div>
+          <div class='category px-0 rounded border border-3 border-light clearfix' style='background-color: rgb(148, 189, 132);'>
+            <h5 class='text-center fw-bold'>Education</h5>
+            <img src="images/classroom.jpg" class='rounded-circle m-2 mt-0 float-end' alt="Drawing of a classroom">
+            <ul>
+              <li><strong>STEM teaching</strong></li>
+              <li><strong>Educational equity</strong></li>
+              <li><strong>Science literacy</strong></li>
+              <li>Abolitionist teaching</li>
+              <li><strong>Media literacy</strong></li>
+              <li>STEM curriculum development</li>
+              <li><strong>21st century skills</strong></li>
+            </ul>
+          </div>
+          <div class='category px-0 rounded border border-3 border-light clearfix' style='background-color: rgb(224, 140, 129);'>
+            <h5 class='text-center fw-bold'>Hobbies</h5>
+            <img src="images/paddleboarding.jpg" class='rounded-circle m-2 mt-0 float-end' alt="Graham & Jenga on a Paddleboard">
+            <ul>
+              <li>Swimming</li>
+              <li>Paddleboarding</li>
+              <li>Guitar</li>
+              <li>Reading</li>
+              <li>Meditation</li>
+              <li>French horn</li>
+              <li>Playing with my dog</li>
+              <li>Anime</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <main id='portfolio' class='section'>
+        <h1 class='text-center fw-bolder mt-3'>Portfolio</h1>
+        <p class='bg-info my-2 p-3 w-100'>Below are the notable projects I've done and research I've contributed to (research is labeled as such).</p>
+        <div class="card text-center mx-auto mb-3 item">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Personal website</h5>
+            <p class="card-text">This website was built using HTML, CSS, and Javascript. I made some use of the Bootstrap framework, but most of the CSS is mine. </p>
+            <a href="https://github.com/woolleygrammoth/woolleygrammoth.github.io" target='_blank' class="btn btn-primary">Source code</a>
+          </div>
+        </div>
+        <div class='projects'>
+          <div  id='td-project-6' class='item mx-auto px-1 py-3'>
+            <img class='portfolio-img d-block mx-auto' src='images/avatar.png' alt='Avatar: The Last Airbender Title Screen'>
+            <h5 class='item-title fw-bold text-center pt-3'>Avatar Guessing Game</h5>
+            <button class='description-reveal btn btn-success d-block mx-auto mb-3'>Click for a description</button>
+            <p class='item-description mb-3'>An Avatar-themed phrase guessing game (it's my favorite show). Its Javascript code includes event listeners that reveal correctly-guessed letters, takes hearts away when the guess is wrong, and displays fun messages when the game is won or lost.</p>
+            <div class='item-buttons d-flex flex-row justify-content-around'>
+              <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-6' target='_blank'>See this project</a>
+              <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-6' target='_blank'>Source code</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <script src='app.js'></script>
 </body>
 </html>

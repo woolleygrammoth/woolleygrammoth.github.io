@@ -1,0 +1,45 @@
+// variables
+const thanksButton = document.querySelector('#thanks-button');
+const tidbitButtons = document.querySelector('.tidbit-buttons');
+const tidbits = [...document.querySelectorAll('article')];
+const projects = document.querySelector('.projects');
+// event listener for thanks button (first thing below header)
+thanksButton.addEventListener('click', e => {
+    const button = e.target;
+    const thanks = button.nextElementSibling;
+    thanks.classList.remove('d-none');
+    setTimeout(() => thanks.classList.add('opacity-1'), 200);
+    button.classList.add('d-none');
+})
+// event listener for tidbit buttons
+tidbits.forEach(self => {
+    self.style.display = 'none';
+})
+tidbitButtons.addEventListener('click', e => {
+    const btn = e.target; 
+    if (btn.tagName === 'BUTTON') {
+        //remove cover stylishly
+        const text = btn.textContent.toLowerCase();
+        tidbits.forEach(self => {
+            if (text === self.id) { 
+                self.style.display = 'block'; 
+            } else {
+                self.style.display = 'none';
+            }
+        });
+        document.querySelector('.tidbits-cover > h1').style.display = 'none';
+        document.querySelector('.tidbits-cover').classList.remove('d-flex');
+        setTimeout(document.querySelector('.tidbits-cover').classList.add('height-0'), 100);
+    }
+});
+// event listener to display project descriptions on click 
+projects.addEventListener('click', e => {
+    const reveal = e.target; 
+    if ([...reveal.classList].includes('description-reveal')) {
+        const description = reveal.nextElementSibling; 
+        setTimeout(() => description.classList.toggle('revealed'), 100);
+        
+    }
+});
+
+
