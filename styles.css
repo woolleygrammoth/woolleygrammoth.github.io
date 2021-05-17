@@ -80,6 +80,7 @@ button:focus {
 
 .main-nav {
     background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
 }
 
 .tidbit-buttons {
@@ -146,12 +147,17 @@ article {
     text-align: justify;
     line-height: 20px;
     opacity: 0;
-    display: none;
-    transition: all 0.5s ease-out;
+    height: 0;
+    transition: all 0.5s ease-out; 
 }
 
-.revealed {
-    opacity: 1;
-    display: block;
+.description-reveal:hover {
+    background-color: rgb(83, 202, 83);
 }
+
+.bottom-nav * {
+    color: #222222;
+}
+
+
 

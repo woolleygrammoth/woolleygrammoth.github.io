@@ -37,8 +37,18 @@ projects.addEventListener('click', e => {
     const reveal = e.target; 
     if ([...reveal.classList].includes('description-reveal')) {
         const description = reveal.nextElementSibling; 
-        setTimeout(() => description.classList.toggle('revealed'), 100);
-        
+        if (description.style.opacity === '') {
+            description.style.opacity = 1;
+            description.style.height = 'auto';
+            reveal.textContent = 'Hide description';
+        } else {
+            description.style.opacity = '';
+            setTimeout(() => {
+                description.style.height = 0;
+                reveal.textContent = 'Show description';
+            }, 500);
+            
+        }
     }
 });
 
