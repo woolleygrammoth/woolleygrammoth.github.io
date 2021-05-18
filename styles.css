@@ -98,14 +98,8 @@ button:focus {
     width: 100%;
 }
 
-.tidbit-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.tidbit-buttons button, 
-#links button {
+.tidbit-buttons a, 
+#links a {
     width: 90px;
     text-align: center;
 }

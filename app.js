@@ -15,10 +15,10 @@ thanksButton.addEventListener('click', e => {
 // event listener for tidbit buttons
 tidbits.forEach(self => {
     self.style.display = 'none';
-})
+});
 tidbitButtons.addEventListener('click', e => {
     const btn = e.target; 
-    if (btn.tagName === 'BUTTON') {
+    if (btn.tagName === 'A') {
         //remove cover stylishly
         const text = btn.textContent.toLowerCase();
         tidbits.forEach(self => {
@@ -28,7 +28,7 @@ tidbitButtons.addEventListener('click', e => {
                 self.style.display = 'none';
             }
         });
-        document.querySelector('.tidbits-cover > h1').style.display = 'none';
+        document.querySelector('.tidbits-cover > h2').style.display = 'none';
         document.querySelector('.tidbits-cover').classList.remove('d-flex');
         setTimeout(document.querySelector('.tidbits-cover').classList.add('height-0'), 100);
     }
@@ -36,7 +36,6 @@ tidbitButtons.addEventListener('click', e => {
 // event listener to display project descriptions on click 
 projects.addEventListener('click', e => {
     const reveal = e.target; 
-    const item = reveal.parentNode;
     if ([...reveal.classList].includes('description-reveal')) {
         const description = reveal.nextElementSibling; 
         if (description.style.opacity === '') {
