@@ -2,7 +2,8 @@
 const thanksButton = document.querySelector('#thanks-button');
 const tidbitButtons = document.querySelector('.tidbit-buttons');
 const tidbits = [...document.querySelectorAll('article')];
-const projects = document.querySelector('.projects');
+const projects = document.querySelector('#projects');
+const contactTop = document.querySelector('#contact-top');
 // event listener for thanks button (first thing below header)
 thanksButton.addEventListener('click', e => {
     const button = e.target;
@@ -10,7 +11,7 @@ thanksButton.addEventListener('click', e => {
     thanks.classList.remove('d-none');
     setTimeout(() => thanks.classList.add('opacity-1'), 200);
     button.classList.add('d-none');
-})
+});
 // event listener for tidbit buttons
 tidbits.forEach(self => {
     self.style.display = 'none';
@@ -35,6 +36,7 @@ tidbitButtons.addEventListener('click', e => {
 // event listener to display project descriptions on click 
 projects.addEventListener('click', e => {
     const reveal = e.target; 
+    const item = reveal.parentNode;
     if ([...reveal.classList].includes('description-reveal')) {
         const description = reveal.nextElementSibling; 
         if (description.style.opacity === '') {
@@ -51,5 +53,11 @@ projects.addEventListener('click', e => {
         }
     }
 });
-
+// event listener to indicate contact information when top contact nav link clicked
+contactTop.addEventListener('click', () => {
+    const contactInfo = document.querySelector('.contact-info');
+    contactInfo.classList.toggle('contact-highlight');
+    setTimeout(() => contactInfo.classList.toggle('contact-highlight'), 1500);
+    }
+);
 

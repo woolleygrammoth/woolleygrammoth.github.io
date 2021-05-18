@@ -8,40 +8,42 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <link href="styles.css" rel="stylesheet">
 </head>
-<body class='bg-light'>
-  <header class='main-header pb-5 pt-0 px-0'>
-    <nav class="main-nav navbar navbar-expand-lg navbar-light mx-0 px-0">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#top">Graham Woolley</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link fw-normal" aria-current="page" href="#top">Contact</a>
-            <a class="nav-link fw-normal" aria-current="page" href="#personal-info">Personal Information</a>
-            <a class="nav-link fw-normal" href="#portfolio">Portfolio</a>
-          </div> <!--navbar-nav-->
-        </div> <!--collapse-->
-      </div> <!--container-fluid-->
-    </nav>
-    <img src='images/g&j-grad.jpg' alt='graham & jenga' class='profile-img mx-auto d-block mt-4'>
-    <div class='contact-info rounded mx-auto mt-4 p-2'>
-      <h1>Graham Woolley</h1>
-      <hr class='my-0'>
-      <p class='email my-0 text-center'>gwoolley@berkeley.edu</p>
-      <div class='icons'>
-        <a href='https://github.com/woolleygrammoth/' target='_blank'><img id='github' src='images/github.svg' alt='Github Logo'></a>
-        <a href='https://www.linkedin.com/in/graham-woolley-18b63818b/' target='_blank'><img id='linkedin' src='images/linkedin.svg' alt='LinkedIn Logo'></a>
-        <a href='https://twitter.com/woolleygrammoth/' target='_blank'><img id='twitter' src='images/twitter.svg' alt='Twitter Logo'></a>
-      </div> <!--icons-->
-    </div> <!--contact-info-->
-  </header>
-  <div id='personal-info'>
-    <button type="button" id='thanks-button' class='btn btn-outline-info btn-sm d-block m-auto mt-3'>Click here</button>
-    <h4 class='thanks-text text-center d-none mt-2 bg-info color-white'>Thanks for visiting!</h4>
-    <div class='section mb-3 pb-2 border-bottom border-dark' id='context'>
-        <h1 class='text-center fw-bolder'>Context</h1>
+<body>
+  <nav class="main-nav navbar navbar-expand-md navbar-light mx-0 px-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#top">Graham Woolley</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link fw-normal" aria-current="page" href="#top" id='contact-top'>Contact</a>
+          <a class="nav-link fw-normal" aria-current="page" href="#personal-info">Overview</a>
+          <a class="nav-link fw-normal" href="#portfolio">Portfolio</a>
+          <a class='nav-link fw-normal' href='https://docs.google.com/document/d/1Yygq2jYWs404f8UbQEyvcFSbh6Xsj3ZUh49GauL4Buw/edit' target='_blank'>Resume</a>
+        </div> <!--navbar-nav-->
+      </div> <!--collapse-->
+    </div> <!--container-fluid-->
+  </nav>
+  <div id='banner'>
+    <header class='main-header pb-5 pt-1 px-0 mt-0'>
+      <img src='images/g&j-grad.jpg' alt='graham & jenga' class='profile-img mx-auto d-block mt-4'>
+      <div class='contact-info rounded mx-auto mt-4 p-2'>
+        <h1>Graham Woolley</h1>
+        <hr class='my-0'>
+        <p class='email my-0 text-center'>gwoolley@berkeley.edu</p>
+        <div class='icons'>
+          <a href='https://github.com/woolleygrammoth/' target='_blank'><img id='github' src='images/github.svg' alt='Github Logo'></a>
+          <a href='https://www.linkedin.com/in/graham-woolley-18b63818b/' target='_blank'><img id='linkedin' src='images/linkedin.svg' alt='LinkedIn Logo'></a>
+          <a href='https://twitter.com/woolleygrammoth/' target='_blank'><img id='twitter' src='images/twitter.svg' alt='Twitter Logo'></a>
+        </div> <!--icons-->
+      </div> <!--contact-info-->
+    </header>
+    <div id='personal-info'>
+      <button type="button" id='thanks-button' class='btn btn-outline-dark btn-sm d-block m-auto mt-3'>Click here</button>
+      <h4 class='thanks-text text-center d-none mt-2 bg-info color-white'>Thanks for visiting!</h4>
+      <div class='section'>
+        <h1 class='text-center fw-bolder'>Overview</h1>
         <p>I am a recent graduate from UC Berkeley Physics (2019). Go Bears! Currently, I'm a STEM teacher at ARISE High School in Oakland, CA&#8212;I teach physics, engineering, and computer science. In the Berkeley Physics community I was called the biggest physics nerd around, and I still wear that label with pride. 
         </p>
         <p>On a purely intellectual level, I could be satisfied for the rest of my life as a tenured theoretical particle physicist. However, I feel the existential pressure to do something about climate change, so I've decided against the academic route. What drives me now is the mission to avert the climate crisis, and I hope to spend my career advancing technological solutions to the problem. 
@@ -50,178 +52,185 @@
         </p>
         <p>I enjoy teaching and value the relationships I've built here, but the existential dread of the climate crisis still weighs heavily on me. For this reason, my next steps involve further developing my tech skills so I can jump into the clean tech space and make an impact. Until then, I'm focused on being the best teacher I can be and educating a new generation about solving the problems of the future. 
         </p>
+      </div>
+    </div> <!--personal-info-->
+  </div><!--banner-->
+  <div id='links' class='mb-3'>
+    <a href='#portfolio'><button type='button' class='btn btn-outline-dark'>Portfolio</button></a>
+    <a href='https://docs.google.com/document/d/1Yygq2jYWs404f8UbQEyvcFSbh6Xsj3ZUh49GauL4Buw/edit' target='_blank'><button type='button' class='btn btn-outline-dark'>Resume</button></a>
+  </div>
+  <div id='tidbits-portfolio'>
+    <div id='tidbits'>
+      <div class='tidbit-buttons'>
+        <a href='#tidbits'><button class='btn btn-outline-dark btn-sm d-block m-auto'>Bio</button></a>
+        <a href='#tidbits'><button class='btn btn-outline-dark btn-sm d-block m-auto'>Interests</button></a>
+      </div>
+      <div class='tidbits-cover d-flex align-items-center m-2'>
+        <h1 class='mx-auto text-center'>Click for more personal info</h1>
+      </div>
+      <article class='section' id='bio'>
+        <h1 class='text-center fw-bolder mt-3'>Bio</h1>
+        <img src="images/siblings.jpg" class='mx-auto d-block rounded-circle' alt="Graham and his siblings Rod and Livi">
+        <p>I was born and raised in Chicago and have always had many interests&#8212;science, baseball, music, math, swimming, volunteering, etc. I was always a fast learner in all these areas, but never to such an extent that science, for example, was an obvious place to focus and excel. 
+        </p>
+        <p>During high school I was split between music and sports as a means to earn a scholarship to some college, but neither really worked out. I knew I wanted to play water polo at a California school, so I moved to SoCal to play at community college. I spent three years working to achieve in-state status while taking classes and finally learning what really drives me. 
+        </p>
+        <p>Community college was a blast. I became obsessed with math and physics. I played college water polo, taught myself the guitar, got into yoga, and spent endless hours at the beach. After those three years, I applied for a third time to UC Berkeley, this time as a physics major. I had finally found something compelling that I could really excel in, and Berkeley Physics gave me the chance to grow. 
+        </p>
+        <p class='pb-3'>While I fed my fascination with physics, I also became more obsessed with climate change, until I realized the urgent need for driven and technically competent people in the climate change mitigation space. To that end, while physics will always feed my childlike curiosity, I’ve decided that green tech is where I will spend my career, in the hope that future generations will get to enjoy Earth in the same ways I have. 
+        </p>
+      </article>
+      <article class='section' id='interests'>
+        <h1 class='text-center fw-bolder mt-3'>Interests</h1>
+        <p class='pb-3'>This is just a list of things I'm interested in. There are things I'm just interested in thinking about or discussing, but the <strong>bolded</strong> items are areas I would consider working in whenever an opportunity presents itself. This list is by no means exhaustive and has been haphazardly arranged into four categories.</p>
+        <div id='categories'>
+          <div class='category px-0 rounded border border-3 border-light clearfix''>
+            <h5 class='text-center fw-bold'>Physics</h5>
+            <img src="images/physics.jpg" class='rounded-circle m-2 mt-0 float-end' alt="Diagram of Earth curving spacetime">
+            <ul>
+              <li>General relativity</li>
+              <li>Chaos theory</li>
+              <li>The Fermi Paradox</li>
+              <li>Particle physics</li>
+              <li><strong>Materials science</strong></li>
+              <li>Entropy & thermodynamics</li>
+              <li><strong>Graphene</strong></li>
+            </ul>
+          </div>
+          <div class='category px-0 rounded border border-3 border-light clearfix'>
+            <h5 class='text-center fw-bold'>Climate and Energy</h5>
+            <img src="images/earth.gif" class='rounded-circle m-2 mt-0 float-end' alt="Rotating Earth">
+            <ul>
+              <li><strong>Supercapacitors</strong></li>
+              <li>Reforestation</li>
+              <li>Climate feedbacks</li>
+              <li><strong>Carbon sequestration</strong></li>
+              <li><strong>Battery chemistries</strong></li>
+              <li><strong>Utility-scale energy storage</strong></li>
+              <li><strong>Climate policy</strong></li>
+              <li>Climate change economics</li>
+              <li><strong>Climate education</strong></li>
+              <li><strong>Disaster preparedness</strong></li>          
+            </ul>
+          </div>
+          <div class='category px-0 rounded border border-3 border-light clearfix'>
+            <h5 class='text-center fw-bold'>Education</h5>
+            <img src="images/classroom.jpg" class='rounded-circle m-2 mt-0 float-end' alt="Drawing of a classroom">
+            <ul>
+              <li><strong>STEM teaching</strong></li>
+              <li><strong>Educational equity</strong></li>
+              <li><strong>Science literacy</strong></li>
+              <li>Abolitionist teaching</li>
+              <li><strong>Media literacy</strong></li>
+              <li>STEM curriculum development</li>
+              <li><strong>21st century skills</strong></li>
+            </ul>
+          </div>
+          <div class='category px-0 rounded border border-3 border-light clearfix'>
+            <h5 class='text-center fw-bold'>Hobbies</h5>
+            <img src="images/paddleboarding.jpg" class='rounded-circle m-2 mt-0 float-end' alt="Graham & Jenga on a Paddleboard">
+            <ul>
+              <li>Swimming</li>
+              <li>Paddleboarding</li>
+              <li>Guitar</li>
+              <li>Reading</li>
+              <li>Meditation</li>
+              <li>French horn</li>
+              <li>Playing with my dog</li>
+              <li>Anime</li>
+            </ul>
+          </div>
+        </div> <!--categories-->
+      </article>
     </div>
-    <div id='links' class='d-flex justify-content-around mb-3'>
-      <a href='#portfolio'><button type='button' class='btn btn-secondary'>Portfolio</button></a>
-      <a href='https://docs.google.com/document/d/1Yygq2jYWs404f8UbQEyvcFSbh6Xsj3ZUh49GauL4Buw/edit' target='_blank'><button type='button' class='btn btn-secondary'>Resume</button></a>
-    </div>
-    <div class='tidbit-buttons' id='tidbits'>
-      <a href='#tidbits'><button class='btn btn-outline-primary btn-sm d-block m-auto'>Bio</button></a>
-      <a href='#tidbits'><button class='btn btn-outline-primary btn-sm d-block m-auto'>Interests</button></a>
-    </div>
-    <div class='tidbits-cover d-flex align-items-center m-2' style='background-color: #20c997;'>
-      <h1 class='mx-auto'>Click for tidbits!</h1>
-    </div>
-    <article class='section' id='bio'>
-      <h1 class='text-center fw-bolder mt-3'>Bio</h1>
-      <img src="images/siblings.jpg" class='mx-auto d-block rounded-circle' alt="Graham and his siblings Rod and Livi">
-      <p>I was born and raised in Chicago and have always had many interests&#8212;science, baseball, music, math, swimming, volunteering, etc. I was always a fast learner in all these areas, but never to such an extent that science, for example, was an obvious place to focus and excel. 
-      </p>
-      <p>During high school I was split between music and sports as a means to earn a scholarship to some college, but neither really worked out. I knew I wanted to play water polo at a California school, so I moved to SoCal to play at community college. I spent three years working to achieve in-state status while taking classes and finally learning what drives me. 
-      </p>
-      <p>Community college was a blast. I became obsessed with math and physics. I played college water polo, taught myself the guitar, got into yoga, and spent endless hours at the beach. After those three years, I applied for a third time to UC Berkeley, this time as a physics major. I had finally found something compelling that I could really excel in, and Berkeley Physics gave me the chance to grow. 
-      </p>
-      <p class='pb-3'>While I fed my fascination with physics, I also became more obsessed with climate change, until I realized the urgent need for driven and technically competent people in the climate change mitigation space. To that end, while physics will always feed my childlike curiosity, I’ve decided that green tech is where I will spend my career, in the hope that future generations will get to enjoy Earth in the same ways I have. 
-      </p>
-    </article>
-    <article class='section' id='interests'>
-      <h1 class='text-center fw-bolder mt-3'>Interests</h1>
-      <p class='pb-3'>This is just a list of things I'm interested in. There are things I'm just interested in thinking about or discussing, but the <strong>bolded</strong> items are areas I would consider working in whenever an opportunity presents itself. This list is by no means exhaustive and has been haphazardly arranged into four categories.</p>
-      <div class='category px-0 rounded border border-3 border-light clearfix' style='background-color: rgb(169, 169, 247);'>
-        <h5 class='text-center fw-bold'>Physics</h5>
-        <img src="images/physics.jpg" class='rounded-circle m-2 mt-0 float-end' alt="Diagram of Earth curving spacetime">
-        <ul>
-          <li>General relativity</li>
-          <li>Chaos theory</li>
-          <li>The Fermi Paradox</li>
-          <li>Particle physics</li>
-          <li><strong>Materials science</strong></li>
-          <li>Entropy & thermodynamics</li>
-          <li><strong>Graphene</strong></li>
-        </ul>
-      </div>
-      <div class='category px-0 rounded border border-3 border-light clearfix' style='background-color: rgb(125, 177, 245);'>
-        <h5 class='text-center fw-bold'>Climate and Energy</h5>
-        <img src="images/earth.gif" class='rounded-circle m-2 mt-0 float-end' alt="Rotating Earth">
-        <ul>
-          <li><strong>Supercapacitors</strong></li>
-          <li>Reforestation</li>
-          <li>Climate feedbacks</li>
-          <li><strong>Carbon sequestration</strong></li>
-          <li><strong>Battery chemistries</strong></li>
-          <li><strong>Utility-scale energy storage</strong></li>
-          <li><strong>Climate policy</strong></li>
-          <li>Climate change economics</li>
-          <li><strong>Climate education</strong></li>
-          <li><strong>Disaster preparedness</strong></li>          
-        </ul>
-      </div>
-      <div class='category px-0 rounded border border-3 border-light clearfix' style='background-color: rgb(148, 189, 132);'>
-        <h5 class='text-center fw-bold'>Education</h5>
-        <img src="images/classroom.jpg" class='rounded-circle m-2 mt-0 float-end' alt="Drawing of a classroom">
-        <ul>
-          <li><strong>STEM teaching</strong></li>
-          <li><strong>Educational equity</strong></li>
-          <li><strong>Science literacy</strong></li>
-          <li>Abolitionist teaching</li>
-          <li><strong>Media literacy</strong></li>
-          <li>STEM curriculum development</li>
-          <li><strong>21st century skills</strong></li>
-        </ul>
-      </div>
-      <div class='category px-0 rounded border border-3 border-light clearfix' style='background-color: rgb(224, 140, 129);'>
-        <h5 class='text-center fw-bold'>Hobbies</h5>
-        <img src="images/paddleboarding.jpg" class='rounded-circle m-2 mt-0 float-end' alt="Graham & Jenga on a Paddleboard">
-        <ul>
-          <li>Swimming</li>
-          <li>Paddleboarding</li>
-          <li>Guitar</li>
-          <li>Reading</li>
-          <li>Meditation</li>
-          <li>French horn</li>
-          <li>Playing with my dog</li>
-          <li>Anime</li>
-        </ul>
-      </div>
-    </article>
-  </div> <!--personal-info-->
-  <main id='portfolio' class='section'>
-    <h1 class='text-center fw-bolder mt-3'>Portfolio</h1>
-    <p class='bg-info my-2 p-3 w-100'>Below are the notable projects I've done and research I've contributed to.</p>
-    <div class="card text-center mx-auto mb-3 item">
-      <div class="card-body">
-        <h5 class="card-title fw-bold">Personal website</h5>
-        <p class="card-text">This website was built using HTML, CSS, and Javascript. I made some use of the Bootstrap framework, but most of the CSS is mine. </p>
-        <a href="https://github.com/woolleygrammoth/woolleygrammoth.github.io" target='_blank' class="btn btn-primary">Source code</a>
-      </div>
-    </div> <!--Personal website div-->
-    <div class='projects'>
-      <div id='td-project-6' class='item mx-auto px-1 py-3 mb-2'>
-        <img class='portfolio-img d-block mx-auto' src='images/avatar.png' alt='Avatar: The Last Airbender Title Screen'>
-        <h5 class='item-title fw-bold text-center pt-3'>Avatar Guessing Game</h5>
-        <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
-        <p class='item-description mb-3'>An Avatar-themed phrase guessing game (it's my favorite show). Its Javascript code includes event listeners that make the game very similar to a regular game of Hangman. This project is best viewed on a desktop screen, since I didn't bother adjusting for multiple screen sizes. </p>
-        <div class='item-buttons d-flex flex-row justify-content-around'>
-          <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-6' target='_blank'>See this project</a>
-          <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-6' target='_blank'>Source code</a>
+    <main id='portfolio' class='section'>
+      <h1 class='text-center fw-bolder mt-3' id='portfolio-h1'>Portfolio</h1>
+      <div class="card text-center mx-auto mb-3 item">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Personal website</h5>
+          <p class="card-text">I built this webpage using HTML, CSS, and Javascript. I made some use of the Bootstrap framework, but most of the CSS is mine, and I made heavy use of CSS Flexbox. </p>
+          <a href="https://github.com/woolleygrammoth/woolleygrammoth.github.io" target='_blank' class="btn btn-primary">Source code</a>
         </div>
-      </div> <!--td-project-6-->
-      <div  id='td-project-5' class='item mx-auto px-1 py-3 mb-2'>
-        <img class='portfolio-img d-block mx-auto' src='images/bayviewcafe.jpg' alt='View of San Francisco Bay from the Lawrence Hall of Science'>
-        <h5 class='item-title fw-bold text-center pt-3'>Interactive Photo Gallery</h5>
-        <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
-        <p class='item-description mb-3'>A photo gallery which I built using CSS Grid, a Javascript lightbox plugin, and original search filter functionality. You can filter the photos based on their captions in the lightbox. The original project had mostly random photos, but I've changed it to photos and captions of my family and my dog. </p>
-        <div class='item-buttons d-flex flex-row justify-content-around'>
-          <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-5' target='_blank'>See this project</a>
-          <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-5' target='_blank'>Source code</a>
-        </div>
-      </div> <!--td-project-5-->
-      <div  id='td-project-7' class='item mx-auto px-1 py-3 mb-2'>
-        <img class='portfolio-img d-block mx-auto' src='images/dashboard.png' alt='Nondescript bar graph'>
-        <h5 class='item-title fw-bold text-center pt-3'>WebApp Dashboard</h5>
-        <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
-        <p class='item-description mb-3'>A dashboard for a hypothetical website or application. I built it from scratch using HTML, styled it in CSS, and added interactions in Javascript. I used Chart.js to display hypothetical web traffic data, animated SVG icons, and used localStorage to save a user's settings. </p>
-        <div class='item-buttons d-flex flex-row justify-content-around'>
-          <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-7' target='_blank'>See this project</a>
-          <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-7' target='_blank'>Source code</a>
-        </div>
-      </div> <!--td-project-7-->
-      <div  id='td-project-8' class='item mx-auto px-1 py-3 mb-2'>
-        <img class='portfolio-img d-block mx-auto' src='images/directory.png' alt='Binary tree'>
-        <h5 class='item-title fw-bold text-center pt-3'>API Directory using Fetch</h5>
-        <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
-        <p class='item-description mb-3'>Each time the page loads, random user data is fetched from the randomuser.me API to construct a mock employee directory. I used Fetch to obtain the data and CSS Grid to display it nicely. I used Javascript to add a search filter as well as a pop-up window that displays more detailed information about each employee. </p>
-        <div class='item-buttons d-flex flex-row justify-content-around'>
-          <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-8' target='_blank'>See this project</a>
-          <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-8' target='_blank'>Source code</a>
-        </div>
-      </div> <!--td-project-8-->
-      <div  id='td-project-4' class='item mx-auto px-1 py-3 mb-2'>
-        <img class='portfolio-img d-block mx-auto' src='images/sass.png' alt='Command line interface'>
-        <h5 class='item-title fw-bold text-center pt-3'>Web Style Guide (Sass)</h5>
-        <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
-        <p class='item-description mb-3'>This project consists of translating existing CSS for a webpage into Sass and compiling SCSS partials into a usable stylesheet. The purpose of including it here is to show that I can write Sass, and hence am prepared for larger web projects.</p>
-        <div class='item-buttons d-flex flex-row justify-content-around'>
-          <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-4' target='_blank'>See this project</a>
-          <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-4' target='_blank'>Source code</a>
-        </div>
-      </div> <!--td-project-4-->
-      <div  id='dm-paper' class='item mx-auto px-1 py-3 mb-2'>
-        <img class='portfolio-img d-block mx-auto' src='images/darkmatter.jpg' alt='Isotropic universe'>
-        <h5 class='item-title fw-bold text-center pt-3'>Dark Matter Model Constraints</h5>
-        <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
-        <p class='item-description mb-3'>I co-authored this paper with a Postdoc at the Berkeley Center for Theoretical Physics. We used existing astrophysical data to constrain a set of dark matter models in order to motivate future experiments in dark matter detection. </p>
-        <div class='item-buttons d-flex flex-row justify-content-around'>
-          <a class='btn btn-primary' href='https://arxiv.org/abs/1905.04319' target='_blank'>See the paper</a>
-        </div>
-      </div> <!--DM Paper-->
-      <div  id='geochron-paper' class='item mx-auto px-1 py-3 mb-2'>
-        <img class='portfolio-img d-block mx-auto' src='images/geochron.jpg' alt='Nondescript bar graph'>
-        <h5 class='item-title fw-bold text-center pt-3'>Geochronology Experiments</h5>
-        <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
-        <p class='item-description mb-3'>This paper shows that sample irradiation using a D-D fusion neutron generator is an effective tool for dating rock samples containing <sup>40</sup>Ar/<sup>39</sup>Ar, potentially opening a new subfield within geochronology. My role within the team at Berkeley's High Flux Neutron Generator was to operate the HFNG and monitor the experiment in progress. </p>
-        <div class='item-buttons d-flex flex-row justify-content-around'>
-          <a class='btn btn-primary' href='https://advances.sciencemag.org/content/5/9/eaaw5526' target='_blank'>See the paper</a>
-        </div>
-      </div> <!--Geochron Paper-->
-    </div> <!--projects-->
-  </main> <!--portfolio-->
+      </div> <!--Personal website div-->
+      <div id='projects'>
+        <div id='td-project-6' class='item mx-auto px-1 py-3 mb-2'>
+          <img class='portfolio-img d-block mx-auto' src='images/avatar.png' alt='Avatar: The Last Airbender Title Screen'>
+          <h5 class='item-title fw-bold text-center pt-3'>Avatar Guessing Game</h5>
+          <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
+          <p class='item-description mb-3'>An Avatar-themed phrase guessing game (it's my favorite show). Its Javascript code includes event listeners that make the game very similar to a regular game of Hangman. This project is meant to be viewed on desktop-sized screens.</p>
+          <div class='item-buttons d-flex flex-row justify-content-around'>
+            <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-6' target='_blank'>See this project</a>
+            <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-6' target='_blank'>Source code</a>
+          </div>
+        </div> <!--td-project-6-->
+        <div  id='td-project-5' class='item mx-auto px-1 py-3 mb-2'>
+          <img class='portfolio-img d-block mx-auto' src='images/bayviewcafe.jpg' alt='View of San Francisco Bay from the Lawrence Hall of Science'>
+          <h5 class='item-title fw-bold text-center pt-3'>Interactive Photo Gallery</h5>
+          <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
+          <p class='item-description mb-3'>A photo gallery which I built using CSS Grid, a Javascript lightbox plugin, and original search filter functionality. You can filter the photos based on their captions in the lightbox. Enjoy these pictures of my dog & family!</p>
+          <div class='item-buttons d-flex flex-row justify-content-around'>
+            <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-5' target='_blank'>See this project</a>
+            <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-5' target='_blank'>Source code</a>
+          </div>
+        </div> <!--td-project-5-->
+        <div  id='td-project-7' class='item mx-auto px-1 py-3 mb-2'>
+          <img class='portfolio-img d-block mx-auto' src='images/dashboard.png' alt='Nondescript bar graph'>
+          <h5 class='item-title fw-bold text-center pt-3'>WebApp Dashboard</h5>
+          <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
+          <p class='item-description mb-3'>A dashboard for a hypothetical website or application. I built it from scratch using HTML, styled it in CSS, and added interactions in Javascript. I used Chart.js to display hypothetical web traffic data, animated SVG icons, and used localStorage to save a user's settings. </p>
+          <div class='item-buttons d-flex flex-row justify-content-around'>
+            <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-7' target='_blank'>See this project</a>
+            <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-7' target='_blank'>Source code</a>
+          </div>
+        </div> <!--td-project-7-->
+        <div  id='td-project-8' class='item mx-auto px-1 py-3 mb-2'>
+          <img class='portfolio-img d-block mx-auto' src='images/directory.png' alt='Binary tree'>
+          <h5 class='item-title fw-bold text-center pt-3'>Employee Directory using Fetch</h5>
+          <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
+          <p class='item-description mb-3'>Each time the page loads, random user data is fetched from the randomuser.me API to construct a mock employee directory. I used Fetch to obtain the data and CSS Grid to display it nicely. I used Javascript to add a search filter as well as a pop-up window that displays more detailed information about each employee. </p>
+          <div class='item-buttons d-flex flex-row justify-content-around'>
+            <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-8' target='_blank'>See this project</a>
+            <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-8' target='_blank'>Source code</a>
+          </div>
+        </div> <!--td-project-8-->
+        <div  id='td-project-4' class='item mx-auto px-1 py-3 mb-2'>
+          <img class='portfolio-img d-block mx-auto' src='images/sass.png' alt='Command line interface'>
+          <h5 class='item-title fw-bold text-center pt-3'>Web Style Guide (Sass)</h5>
+          <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
+          <p class='item-description mb-3'>This project consists of translating existing CSS for a webpage into Sass and compiling SCSS partials into a usable stylesheet. The purpose of including it here is to show that I can write Sass, and hence am prepared for larger web projects.</p>
+          <div class='item-buttons d-flex flex-row justify-content-around'>
+            <a class='btn btn-primary' href='http://woolleygrammoth.github.io/td-project-4' target='_blank'>See this project</a>
+            <a class='btn btn-primary' href='http://github.com/woolleygrammoth/td-project-4' target='_blank'>Source code</a>
+          </div>
+        </div> <!--td-project-4-->
+        <div  id='dm-paper' class='item mx-auto px-1 py-3 mb-2'>
+          <img class='portfolio-img d-block mx-auto' src='images/darkmatter.jpg' alt='Isotropic universe'>
+          <h5 class='item-title fw-bold text-center pt-3'>Dark Matter Model Constraints</h5>
+          <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
+          <p class='item-description mb-3'>I co-authored this paper with a Postdoc at the Berkeley Center for Theoretical Physics. We used existing astrophysical data to constrain a set of dark matter models in order to motivate future experiments in dark matter detection. </p>
+          <div class='item-buttons d-flex flex-row justify-content-around'>
+            <a class='btn btn-primary' href='https://arxiv.org/abs/1905.04319' target='_blank'>See the paper</a>
+          </div>
+        </div> <!--DM Paper-->
+        <div  id='geochron-paper' class='item mx-auto px-1 py-3 mb-2'>
+          <img class='portfolio-img d-block mx-auto' src='images/geochron.jpg' alt='Nondescript bar graph'>
+          <h5 class='item-title fw-bold text-center pt-3'>Geochronology Experiments</h5>
+          <button class='description-reveal btn btn-success d-block mx-auto mb-1'>Show description</button>
+          <p class='item-description mb-3'>This paper establishes an improved method for measuring the age of rock samples containing <sup>40</sup>Ar / <sup>39</sup>Ar using a D-D fusion neutron generator. My role within the team at Berkeley's High Flux Neutron Generator was to operate the HFNG and monitor the experiment in progress.</p>
+            
+          <div class='item-buttons d-flex flex-row justify-content-around'>
+            <a class='btn btn-primary' href='https://advances.sciencemag.org/content/5/9/eaaw5526' target='_blank'>See the paper</a>
+          </div>
+        </div> <!--Geochron Paper-->
+      </div> <!--projects-->
+    </main> <!--portfolio-->
+</div>
   <hr>
   <footer class='p-3'>
     <ul class='bottom-nav d-flex flex-column flex-md-row justify-content-md-center px-0'>
       <li class='btn btn-outline-dark btn-sm m-1'><a href='#top'>Contact</a></li>
-      <li class='btn btn-outline-dark btn-sm m-1'><a href='#personal-info'>Personal Information</a></li>
-      <li class='btn btn-outline-dark btn-sm m-1'><a href='#portfolio'>Portfolio</a></li>
+      <li class='btn btn-outline-dark btn-sm m-1'><a href='#personal-info'>Overview</a></li>
+      <li class='btn btn-outline-dark btn-sm m-1'><a href='#portfolio-h1'>Portfolio</a></li>
     </ul>
   </footer>
   <script src='app.js'></script>

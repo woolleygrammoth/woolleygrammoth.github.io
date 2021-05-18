@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(rgb(104, 212, 171), rgb(133, 145, 252))
+}
+
 .main-header {
     background: 
         linear-gradient(
@@ -17,7 +21,6 @@
 }
 
 .profile-img {
-    height: 35%;
     width: 35%;
     min-width: 216px;
     border-radius: 50%;
@@ -27,6 +30,18 @@
     width: fit-content;
     background-color: rgba(255, 255, 255, 0.75);
     color: rgb(7, 69, 151);
+    transition: all 0.5s;
+}
+
+.contact-highlight {
+    color: white; 
+    background-color: rgb(61, 61, 184);
+}
+
+#personal-info {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid darkslategrey;
 }
 
 .icons {
@@ -44,7 +59,7 @@ a {
     transition: transform 0.25s cubic-bezier(.49,-0.54,.85,1.69);
 }
 
-a:hover {
+.icons *:hover {
     transform: scale(1.1);
 }
 
@@ -105,7 +120,7 @@ button:focus {
 }
 
 article {
-    background-color: #8fcfbc;;
+    background-color: transparent;
     border: 2px solid black;
 }
 
@@ -118,8 +133,8 @@ article {
 }
 
 .category > img {
-    height: 35%;
     width: 35%;
+    height: auto;
 }
 
 .category > li {
@@ -131,13 +146,22 @@ article {
     list-style-type: none;
 }
 
+category {
+    background-color: transparent;
+}
+
 .item {
-    background-color: rgb(201, 201, 201);
+    position: relative;
+    background-color: transparent;
     width: 90%;
+    border-radius: 5px;
+    border: 1px solid rgb(119, 119, 119);
+    transition: all 0.5s;
 }
 
 .portfolio-img {
     width: 75%;
+    height: 175px;
 }
 
 .item-description {
@@ -148,16 +172,103 @@ article {
     line-height: 20px;
     opacity: 0;
     height: 0;
+    background-color: rgb(255, 255, 255, 0.9);
     transition: all 0.5s ease-out; 
+    position: absolute; 
+    top: 10px; left: 0; right: 0;
 }
 
 .description-reveal:hover {
     background-color: rgb(83, 202, 83);
+
 }
+
 
 .bottom-nav * {
     color: #222222;
 }
 
+#links {
+    display: flex;
+    justify-content: space-around;
+}
 
+@media (min-width: 768px) {
+    #categories {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
+    .category {
+        flex-basis: 50%;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item {
+        flex-basis: 50%;
+        display: flex; 
+        flex-direction: column;
+        padding: 0.25em;
+    }
+
+    .item-buttons {
+        margin-top: auto;
+    }
+} 
+
+@media (min-width: 1024px) {
+    #banner {
+        display: flex; 
+        flex-direction: row;
+        height: 420px;
+        margin-bottom: 1em;
+    }
+
+    #banner > *, 
+    #tidbits-portfolio > * {
+        flex-basis: 50%;
+        overflow: scroll;
+    }
+
+    #personal-info {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #tidbits-portfolio {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        border-top: 1px solid darkslategray;
+        position: relative;
+    }
+
+    .tidbit-buttons {
+        margin-top: 0.5em;
+    }
+
+    .category li {
+        font-size: 0.75em;
+    }
+
+    #portfolio {
+        padding: 0 0.25em;
+    }
+
+    .item a {
+        margin: 0 0.25em;
+        font-size: 0.85em;
+    }
+}
