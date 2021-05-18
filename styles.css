@@ -238,7 +238,8 @@ category {
     }
 
     #links {
-        display: none;
+        opacity: 0;
+        height: 0;
     }
 
     #tidbits-portfolio {
