@@ -132,7 +132,7 @@ article {
 }
 
 .category > li {
-    align-self: left;
+    align-self: flex-start;
     display: inline-block;
     width: max-content;
     padding: 3px;
