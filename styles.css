@@ -113,10 +113,9 @@ button:focus {
     height: 0;
 }
 
-article {
+/* article {
     background-color: transparent;
-    border: 2px solid black;
-}
+} */
 
 .category > ul {
     display: flex; 
