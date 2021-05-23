@@ -113,10 +113,6 @@ button:focus {
     height: 0;
 }
 
-/* article {
-    background-color: transparent;
-} */
-
 .category > ul {
     display: flex; 
     flex-wrap: wrap; 
