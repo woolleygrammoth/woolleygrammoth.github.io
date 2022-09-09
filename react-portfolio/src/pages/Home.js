@@ -1,10 +1,16 @@
 import React from 'react'; 
-import Main from '../components/Main';
 
 class Home extends React.Component {
     render() {
         return (    
-                <h1>WELCOME TO THE HOMNE PAGE BITCH NASTYONES FUCK YEAGH</h1>
+                <main className='main-home'>
+                    <img src={require('../images/g_j-grad.jpg')} alt='Graham with his dog, Jenga'/>
+                    <div className='overview'>
+                        <p>Summary</p>
+                        <p>Bio</p>
+                        <p>Interests</p>
+                    </div>
+                </main>
         );
     }
 

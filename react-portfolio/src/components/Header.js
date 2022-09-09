@@ -3,6 +3,7 @@ import React from "react";
 class Header extends React.Component {
     render() {
         return (
+            <>
             <div className='main-header'>
                 <h1>Graham Woolley</h1>
                 <div className='contact'>
@@ -20,6 +21,8 @@ class Header extends React.Component {
                     <a href='/CV'>CV</a>
                 </nav>
             </div>
+            <hr noshadow/>
+            </>
         )
     }
 }

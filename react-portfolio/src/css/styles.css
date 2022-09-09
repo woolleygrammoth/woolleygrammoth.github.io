@@ -1,8 +1,11 @@
+/* general */
+/* ============================================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 :root {
     --color-main: #B4CEDF;
     --color-header: #6fb2e4;
+    --color-border: #35556d;
 }
 
 * {
@@ -17,6 +20,8 @@ body, html {
     margin: auto;
 }
 
+/* header */
+/* ============================================================================= */
 .main-header {
     display: flex;
     flex-direction: row;
@@ -24,7 +29,17 @@ body, html {
     justify-content: space-around;
     margin-top: 0;
     padding-top: 1em;
+    background-size: cover;
+}
+
+.main-header + hr {
+    height: 8px;
+    margin: 0;
+    padding: 0;
     background-color: var(--color-header);
+    box-shadow: none;
+    position: fixed;
+    right: 0; left: 0;
 }
 
 .main-header > h1 {
@@ -54,9 +69,11 @@ nav > a:hover {
     background-color: #072842;
 }
 
+/* footer */
+/* ============================================================================= */
 .footer-nav {
     position: fixed;
-    left: 0;
+    left: 0; 
     bottom: 0;
     width: 100%;
     background-color: var(--color-header);
@@ -67,12 +84,33 @@ nav > a:hover {
     margin: 0 3em;
 }
 
-/* .footer-nav > .icons {
-    margin-top: 2em;
-    
-} */
+.footer-nav > .icons {
+    margin-top: 1em;
+}
+
+.footer-nav .icons a {
+    margin: 0;
+}
 
 a:visited {
     color: black;
 }
 
+/* home */
+/* ============================================================================= */
+.main-home > img {
+    margin: 1em;
+    width: 33%;
+    border-radius: 50%;
+    float: left;
+}
+
+.overview {
+    margin-top: 2em;
+    padding: 1em;
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
