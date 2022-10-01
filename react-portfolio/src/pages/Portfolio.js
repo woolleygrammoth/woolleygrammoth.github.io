@@ -1,9 +1,13 @@
 import React from 'react';
+import Card from '../components/Card';
 
 class Portfolio extends React.Component {
     render() {
         return (
-            <h1>WELCOME TO THE PORTFOLIOs BITCHES</h1>
+            <main className='main-portfolio'>
+                <Card />
+
+            </main>
         );
     }
 }
