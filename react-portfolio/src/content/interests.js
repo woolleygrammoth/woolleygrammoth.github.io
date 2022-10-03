@@ -38,9 +38,7 @@ const education = `
         <li>Scientific literacy</li>
         <li>Media literacy</li>
         <li>21st-century skills</li>
-        <li>Abolitionist teaching</li>
         <li>Incentivizing careers in teaching</li>
-
     </ul>
 `;
 

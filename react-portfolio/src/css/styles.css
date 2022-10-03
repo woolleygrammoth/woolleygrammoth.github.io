@@ -6,6 +6,9 @@
     --color-main: #B4CEDF;
     --color-header: #0a2438;
     --color-border: #35556d;
+    --color-button: #2d80c1;
+    --color-skills: #5c8aa9;
+    --color-card: #85afcb;
 }
 
 * {
@@ -180,11 +183,78 @@ ul.interests {
 
 /* portfolio */
 /* ============================================================================= */
-.main-portfolio {
-    width: 100%;
-    display: flex;
+.card {
+    display: grid;
+    grid-template-areas: 
+        "t  im  d"
+        "lk im  d"
+        "lk sk sk";
+    grid-template-columns: 1fr 1fr 2fr;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    margin: 1em 0;
+    box-shadow: 1px 1px black;
+    background-color: var(--color-card);
 }
 
-.main-portfolio img{
+.card h3 {
+    grid-area: t;
+    align-self: center;
+}
+
+.card img{
     height: 100px;
+    max-width: 140px;
+    grid-area: im;
+    align-self: center;
+    margin: auto;
+}
+
+.card p {
+    grid-area: d;
+}
+
+.card .project-links {
+    grid-area: lk;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.5em;
+}
+
+.card .project-links * {
+    background-color: var(--color-button);
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    padding: 0.5em 0;
+    border-radius: 5px;
+    border: 2px solid var(--color-border);
+    box-shadow: 2px 3px black;
+}
+
+.card .project-links *:hover {
+    box-shadow: 1px 1px grey;
+}
+
+.card .skills {
+    grid-area: sk;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--color-skills);
+    padding-inline-start: 0;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+.card .skills li {
+    padding: 0 1em 0.25em;
+}
+
+.card .skills h4 {
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
 }
