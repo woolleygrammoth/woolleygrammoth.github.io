@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/twitter.3e0a3b54.svg"
   },
   {
-    "revision": "b083cb7c96c87a34b31ff29d7b53374a",
+    "revision": "98eb304ca0c1bc2a8c3112eaf4264cd2",
     "url": "/index.html"
   }
 ];
