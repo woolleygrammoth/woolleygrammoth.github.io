@@ -10,8 +10,10 @@ const mission = `
         with solar microgrids in remote villages all over the world. 
     </p>
     <p>
-        My time at New Sun Road was cut short by an early pandemic hiring freeze. 
-        A furious job hunt led me to ARISE High School in Oakland, 
+        My time at New Sun Road was cut short by an early pandemic hiring freeze,  
+        and I found myself in a job market where all manner of climate tech startups were 
+        tightening their belts while more experienced candidates were looking to fill the available roles. 
+        A furious job hunt ultimately led me to ARISE High School in Oakland, 
         where I spent two years as the physics, engineering, and computer science  
         teacher. I learned a lot about myself and about the education system, 
         enjoyed aspects of the job immensely, and cherished 

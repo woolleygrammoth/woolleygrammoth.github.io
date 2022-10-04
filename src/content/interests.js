@@ -13,6 +13,22 @@ const physics = `
     </ul>
 `;
 
+const engineering = `
+    <ul class='interests'>
+        <li>Databases</li>
+        <li>APIs</li>
+        <li>Data pipelines</li>
+        <li>SQL</li>
+        <li>Thermal systems</li>
+        <li>Machine learning</li>
+        <li>Cloud computing</li>
+        <li>Inferential statistics</li>
+        <li>Failure analysis</li>
+        <li>Experimental design</li>
+        <li>Feedback and control</li>
+    </ul>
+`;
+
 const climateAndEnergy = `
 <ul class='interests'>
     <li>Reforestation</li>
@@ -57,4 +73,4 @@ const hobbies = `
         <li>Hiking</li>
     </ul>
 `;
-export {physics, climateAndEnergy, education, hobbies};
+export {physics, engineering, climateAndEnergy, education, hobbies};

@@ -4,7 +4,7 @@ import Section from '../components/Section';
 import overview from '../content/overview.js';
 import bio from '../content/bio.js';
 import mission from '../content/mission.js';
-import {physics, climateAndEnergy, education, hobbies} from '../content/interests.js'; 
+import {physics, climateAndEnergy, engineering, education, hobbies} from '../content/interests.js'; 
 
 class Home extends React.Component {
     constructor(props) {
@@ -34,6 +34,7 @@ class Home extends React.Component {
                             <div className='interests-links' onClick={e => this.handleInterestClick(e)}>
                                 <p id='physics' className={this.state.interestCategory === 'Physics' ? 'selected' : ''}>Physics</p>
                                 <p id='climate-and-energy' className={this.state.interestCategory === 'Climate and Energy' ? 'selected' : ''}>Climate and Energy</p>
+                                <p id='engineering' className={this.state.interestCategory === 'Engineering' ? 'selected' : ''}>Engineering</p>
                                 <p id='education' className={this.state.interestCategory === 'Education' ? 'selected' : ''}>Education</p>
                                 <p id='hobbies' className={this.state.interestCategory === 'Hobbies' ? 'selected' : ''}>Hobbies</p>
                             </div>
@@ -41,6 +42,7 @@ class Home extends React.Component {
                             {this.state.interestCategory === 'Climate and Energy' && <Section content={climateAndEnergy} />}
                             {this.state.interestCategory === 'Education' && <Section content={education} />}
                             {this.state.interestCategory === 'Hobbies' && <Section content={hobbies} />}
+                            {this.state.interestCategory === 'Engineering' && <Section content={engineering} />}
                         </>
                     }
                 </main>
