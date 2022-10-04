@@ -1,5 +1,5 @@
 import React from "react";
-import {HashRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
@@ -15,10 +15,10 @@ import './css/styles.css'
 
 function App() {
   return (
-    <Router basename={`${process.env.PUBLIC_URL}`}>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
-        <Route exact path='' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/portfolio' element={<Portfolio />}/>
         <Route path='/cv' element={<CV />}/>
         <Route path='*' element={<NotFound />} />
