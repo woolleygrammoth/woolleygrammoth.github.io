@@ -13,7 +13,7 @@ class Header extends React.Component {
                 <nav>
                     <a href='/'>Home</a>
                     <a href='/portfolio'>Portfolio</a>
-                    <a href='/CV'>CV</a>
+                    {/* <a href='/cv'>CV</a> */}
                 </nav>
             
             </div>
