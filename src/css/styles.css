@@ -67,7 +67,7 @@ nav {
     margin: 1em;
 }
 
-nav > a {
+nav > * {
     text-decoration: none;
     background-color: #dbebf7;
     border-radius: 3px;
