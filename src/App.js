@@ -18,9 +18,9 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
-        <Route path={process.env.PUBLIC_URL + '/'} element={<Home />} />
-        <Route path={process.env.PUBLIC_URL + '/portfolio'} element={<Portfolio />}/>
-        <Route path={process.env.PUBLIC_URL + '/cv'} element={<CV />}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/portfolio' element={<Portfolio />}/>
+        <Route path='/cv' element={<CV />}/>
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
