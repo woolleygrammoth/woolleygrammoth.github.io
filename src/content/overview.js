@@ -8,6 +8,6 @@
         <li>dog dad</li>
         <li>uncle</li>
     </ul>
-    <a href='/portfolio'>See my portfolio</a>
+    <a href='/#/portfolio'>See my portfolio</a>
 `;
 export default overview;
